@@ -1,9 +1,37 @@
 body {
+  margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: rgb(191, 255, 241);
   transition: background-color 0.5s;
 }
 
+#main {
+  transition: margin-right 0.5s;
+}
+
+/* PORTFOLIO SECTIONS */
+.portfolio-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 80px 16px;
+  line-height: 2.5;
+}
+
+#about {
+  background-color: #BFFFF1;
+}
+
+#projects {
+  background-color: #EEE5BF;
+}
+
+#contact {
+  background-color: #EFC69B;
+}
+
+/* SIDE NAV */
 #menu-button {
   position: fixed;
   z-index: 2;
@@ -43,12 +71,7 @@ body {
   color: #ECE7D0;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
 @media screen and (max-height: 450px) {
-  .side-nav {padding-top: 15px;}
+  .side-nav, .portfolio-sections {padding-top: 15px;}
   .side-nav a {padding: 8px 8px 8px 32px;}
 }
