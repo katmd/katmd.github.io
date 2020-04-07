@@ -17,6 +17,7 @@ body {
   min-height: 100vh;
   padding: 80px 16px;
   line-height: 2.5;
+  color: rgb(3, 73, 58);
 }
 
 #about {
@@ -29,6 +30,50 @@ body {
 
 #contact {
   background-color: #EFC69B;
+}
+
+#projects-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+}
+
+.project-container {
+  margin: 32px;
+  width: 500px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: normal;
+  transition: all 0.5s linear;
+}
+
+.project-container:hover {
+  margin: 0px;
+  padding: 32px;
+  background-color: rgb(205, 255, 245);
+  border: 2px solid rgb(101, 197, 176);
+}
+
+.project-img {
+  height: 300px;
+  max-width: 100%;
+}
+
+.project-desc {
+  display: none;
+}
+
+.project-link {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgb(101, 197, 176);
+  color: rgb(173, 241, 227);
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: rgb(205, 255, 245);
+  text-decoration: none;
 }
 
 /* SIDE NAV */

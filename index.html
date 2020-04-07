@@ -18,15 +18,59 @@
     <!-- Main Body -->
     <div id="main">
       <div id="about" class="portfolio-sections">
-        <h2 class="section-header">About</h2>
-        <p>My name is Kathleen McDaniel and I am a geologist turned software engineer. My dabbling in technology during my environmental consulting career had me checking out resources like freeCodeCamp, the University of Helsinki's Java MOOC, and ultimately led me to enroll in the Grace Hopper Program at Fullstack Academy. I love creating new apps using both frontend and backend technologies with a focus on the NERDS stack (Node, Express, React/Redux, Databases with SQL).</p>
+        <h1 class="section-header">Kathleen McDaniel</h1>
+        <p>I am a geologist turned software engineer. My dabbling in technology during my environmental consulting career ultimately led me to enroll in the Grace Hopper Program at Fullstack Academy. I love creating new apps using both frontend and backend technologies with a focus on the NERDS stack (Node, Express, React/Redux, Databases with SQL).</p>
+        <p>When I'm not coding, you can find me walking the parks, catching up on my Steam library backlog, or picking out a tune on the piano.</p>
       </div>
       <div id="projects" class="portfolio-sections">
-        <h2 class="section-header">Projects</h2>
-        <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+        <h1 class="section-header">Projects</h1>
+        <div id="projects-list">
+          <div class="project-container" onmouseover="focusProj(this)" onmouseout="unfocusProj(this)">
+            <div class="project-img-container">
+              <img class="project-img" src="images/fang-and-bone_all_prod.png" alt="Fang and Bone: Shop Page">
+            </div>
+            <div class="project-desc">
+              <h2 class="project-name">Fang and Bone</h2>
+              <p>E-commerce site simulating purchasing items from the Legend of Zelda: Breath of the Wild's favorite monstrous shop, Fang and Bone.</p>
+              <a href="https://fang-and-bone.herokuapp.com/" target="_blank" class="project-link">VISIT</a>
+            </div>
+          </div>
+          <div class="project-container" onmouseover="focusProj(this)" onmouseout="unfocusProj(this)">
+            <div class="project-img-container">
+              <img class="project-img" src="images/adventurAR_login.jpg" alt="AdventurAR: Game Map Screen">
+              <img class="project-img" src="images/adventurAR_map_view.jpg" alt="AdventurAR: Game Map Screen">
+              <img class="project-img" src="images/adventurAR_AR_view.jpg" alt="AdventurAR: Game AR Screen">
+            </div>
+            <div class="project-desc">
+              <h2 class="project-name">AdventurAR</h2>
+              <p>Augmented reality scavenger hunt experience built with React Native for Android.</p>
+              <a href="https://github.com/AdventurerScavengerHunt/adventurer" target="_blank" class="project-link">VISIT</a>
+            </div>
+          </div>
+          <div class="project-container" onmouseover="focusProj(this)" onmouseout="unfocusProj(this)">
+            <div class="project-img-container">
+              <img class="project-img" src="images/table-chart-challenge_line_graph.png" alt="Visualization Challenge: Line Graph View">
+            </div>
+            <div class="project-desc">
+              <h2 class="project-name">Table and Chart Visualization</h2>
+              <p>Front end web application which renders a 2-dimensional array of data in both table and chart form with randomized colors on refresh.</p>
+              <a href="https://github.com/katmd/2d-web-challenge" target="_blank" class="project-link">VISIT</a>
+            </div>
+          </div>
+          <div class="project-container" onmouseover="focusProj(this)" onmouseout="unfocusProj(this)">
+            <div class="project-img-container">
+              <img class="project-img" src="images/ticker-talker_portfolio.png" alt="Ticker Talker: Portfolio Page">
+            </div>
+            <div class="project-desc">
+              <h2 class="project-name">Ticker Talker</h2>
+              <p>Simulate stock market choices and performance through portfolio, transaction history, and search features.</p>
+              <a href="https://ticker-talker.herokuapp.com/" target="_blank" class="project-link">VISIT</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="contact" class="portfolio-sections">
-        <h2 class="section-header">Contact</h2>
+        <h1 class="section-header">Contact</h1>
         <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
       </div>
     </div>

@@ -3,6 +3,7 @@ const sideNavMenu = document.getElementById("side-nav-menu")
 const main = document.getElementById("main")
 const body = document.body
 
+/* Open and close side nav menu */
 function openNav() {
   menuButton.innerHTML = "&times;";
   menuButton.style.fontSize = "4em";
@@ -21,4 +22,13 @@ function closeNav() {
   sideNavMenu.style.width = "0";
   main.style.marginRight= "0";
   body.style.backgroundColor = "#BFFFF1";
+}
+
+/* Show and hide project details */
+function focusProj(projContainer) {
+  projContainer.querySelector(".project-desc").style.display = "block"
+}
+
+function unfocusProj(projContainer) {
+  projContainer.querySelector(".project-desc").style.display = "none"
 }
