@@ -52,6 +52,21 @@ body {
   padding: 32px;
   background-color: rgb(205, 255, 245);
   border: 2px solid rgb(101, 197, 176);
+  /* animation: expand-portfolio 0.5s forwards; */
+}
+
+@keyframes expand-portfolio {
+  /* You could think of as "step 1" */
+  0% {
+    /* background: orange; */
+  }
+  /* You could think of as "step 2" */
+  100% {
+    margin: 0px;
+    padding: 32px;
+    background-color: rgb(205, 255, 245);
+    border: 2px solid rgb(101, 197, 176);
+  }
 }
 
 .project-img {
@@ -119,4 +134,9 @@ body {
 @media screen and (max-height: 450px) {
   .side-nav, .portfolio-sections {padding-top: 15px;}
   .side-nav a {padding: 8px 8px 8px 32px;}
+}
+
+@media screen and (max-width: 1180px) {
+  #projects-list {flex-flow: column nowrap;
+    align-items: center;}
 }
