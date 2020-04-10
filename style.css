@@ -154,5 +154,5 @@ body {
 
 @media screen and (max-width: 564px) {
   .project-container {width: calc(100vw - 64px);}
-  .project-desc {font-size: 3vw;}
+  .project-desc {position: relative; padding: 16px;}
 }
