@@ -35,11 +35,12 @@ body {
 #projects-list {
   display: flex;
   flex-flow: row wrap;
-  justify-items: center;
+  justify-content: center;
 }
 
 .project-container {
   margin: 32px;
+  padding: 0px;
   width: 500px;
   border-radius: 5px;
   text-align: center;
@@ -51,27 +52,15 @@ body {
   margin: 0px;
   padding: 32px;
   background-color: rgb(205, 255, 245);
-  border: 2px solid rgb(101, 197, 176);
-  /* animation: expand-portfolio 0.5s forwards; */
 }
 
-@keyframes expand-portfolio {
-  /* You could think of as "step 1" */
-  0% {
-    /* background: orange; */
-  }
-  /* You could think of as "step 2" */
-  100% {
-    margin: 0px;
-    padding: 32px;
-    background-color: rgb(205, 255, 245);
-    border: 2px solid rgb(101, 197, 176);
-  }
+.project-img-container {
+  max-width: 100%;
 }
 
 .project-img {
-  height: 300px;
   max-width: 100%;
+  max-height: 300px;
 }
 
 .project-desc {
@@ -139,4 +128,8 @@ body {
 @media screen and (max-width: 1180px) {
   #projects-list {flex-flow: column nowrap;
     align-items: center;}
+}
+
+@media screen and (max-width: 564px) {
+  .project-container {width: calc(100vw - 64px);}
 }
