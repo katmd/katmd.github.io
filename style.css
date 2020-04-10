@@ -21,7 +21,7 @@ body {
 }
 
 #about {
-  background-color: #BFFFF1;
+  background-color: #D1BCE3;
 }
 
 #projects {
@@ -32,6 +32,7 @@ body {
   background-color: #EFC69B;
 }
 
+/* PROJECTS SECTION */
 #projects-list {
   display: flex;
   flex-flow: row wrap;
@@ -39,38 +40,59 @@ body {
 }
 
 .project-container {
+  position: relative;
   margin: 32px;
-  padding: 0px;
   width: 500px;
   border-radius: 5px;
   text-align: center;
   line-height: normal;
-  transition: all 0.5s linear;
 }
 
 .project-container:hover {
-  margin: 0px;
-  padding: 32px;
   background-color: rgb(205, 255, 245);
 }
 
 .project-img-container {
   max-width: 100%;
+  padding: 16px;
+  background-color: rgb(0, 0, 0, 0.8);
 }
 
 .project-img {
+  display: inline;
   max-width: 100%;
   max-height: 300px;
 }
 
 .project-desc {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(205, 255, 245, 0.8);
+}
+
+.project-desc > * {
+  width: 75%;
+  align-self: center;
+}
+
+.tech-stack {
+  border-style: solid;
+  border-width: 2px;
+  border-color: gray;
+  border-left: none;
+  border-right: none;
 }
 
 .project-link {
+  display: inline;
   padding: 8px;
   border-radius: 5px;
-  background-color: rgb(101, 197, 176);
+  background-color: rgb(70, 168, 147);
   color: rgb(173, 241, 227);
   text-decoration: none;
 }
@@ -132,4 +154,5 @@ body {
 
 @media screen and (max-width: 564px) {
   .project-container {width: calc(100vw - 64px);}
+  .project-desc {font-size: 3vw;}
 }

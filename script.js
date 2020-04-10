@@ -26,7 +26,7 @@ function closeNav() {
 
 /* Show and hide project details */
 function focusProj(projContainer) {
-  projContainer.querySelector(".project-desc").style.display = "block"
+  projContainer.querySelector(".project-desc").style.display = "flex"
 }
 
 function unfocusProj(projContainer) {
