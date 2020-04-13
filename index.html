@@ -17,14 +17,17 @@
 
     <!-- Main Body -->
     <div id="main">
+      <!-- About Section -->
       <div id="about" class="portfolio-sections">
         <h1 class="section-header">Kathleen McDaniel</h1>
-        <p>I am a geologist turned software engineer. My dabbling in technology during my environmental consulting career ultimately led me to enroll in the Grace Hopper Program at Fullstack Academy. I love creating new apps using both frontend and backend technologies with a focus on the NERDS stack (Node, Express, React/Redux, Databases with SQL).</p>
+        <p>I am a geologist turned software engineer. My dabbling in technology during my environmental consulting career ultimately led me to enroll in and subsequently graduate from the Grace Hopper Program at Fullstack Academy. I love creating new apps using both frontend and backend technologies with a focus on the NERDS stack (Node, Express, React/Redux, Databases with SQL).</p>
         <p>When I'm not coding, you can find me walking the parks, catching up on my Steam library backlog, or picking out a tune on the piano.</p>
       </div>
+      <!-- Projects Section -->
       <div id="projects" class="portfolio-sections">
         <h1 class="section-header">Projects</h1>
         <div id="projects-list">
+          <!-- Fang and Bone Project -->
           <div class="project-container" onmouseover="focusProj(this)" onmouseout="unfocusProj(this)">
             <div class="project-img-container">
               <img class="project-img" src="images/fang-and-bone_all_prod.png" alt="Fang and Bone: Shop Page">
@@ -36,6 +39,7 @@
               <a href="https://fang-and-bone.herokuapp.com/" target="_blank" class="project-link">VISIT</a>
             </div>
           </div>
+          <!-- AdventurAR Project -->
           <div class="project-container" onmouseover="focusProj(this)" onmouseout="unfocusProj(this)">
             <div class="project-img-container">
               <img class="project-img" src="images/adventurAR_login.jpg" alt="AdventurAR: Game Map Screen">
@@ -49,6 +53,7 @@
               <a href="https://github.com/AdventurerScavengerHunt/adventurer" target="_blank" class="project-link">VISIT</a>
             </div>
           </div>
+          <!-- Table and Chart Project -->
           <div class="project-container" onmouseover="focusProj(this)" onmouseout="unfocusProj(this)">
             <div class="project-img-container">
               <img class="project-img" src="images/table-chart-challenge_line_graph.png" alt="Visualization Challenge: Line Graph View">
@@ -60,6 +65,7 @@
               <a href="https://github.com/katmd/2d-web-challenge" target="_blank" class="project-link">VISIT</a>
             </div>
           </div>
+          <!-- Ticker Talker Project -->
           <div class="project-container" onmouseover="focusProj(this)" onmouseout="unfocusProj(this)">
             <div class="project-img-container">
               <img class="project-img" src="images/ticker-talker_portfolio.png" alt="Ticker Talker: Portfolio Page">
@@ -73,12 +79,47 @@
           </div>
         </div>
       </div>
+      <!-- Contact Section -->
       <div id="contact" class="portfolio-sections">
         <h1 class="section-header">Contact</h1>
-        <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+        <form id="contact-form" action="https://katmd-portfolio.herokuapp.com/contact" method="post" role="form">
+          <table id="contact-details">
+            <tbody>
+            <tr>
+              <td>
+                <label for="name">
+                  <small>Name</small>
+                </label>
+              </td>
+              <td>
+                <input name="name" type="text" required/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">
+                  <small>Email</small>
+                </label>
+              </td>
+              <td>
+                <input name="email" type="email" required/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="message">
+                  <small>Message</small>
+                </label>
+              </td>
+              <td>
+                <textarea name="message" type="text" required></textarea>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <button id="submit-btn" type="submit">SUBMIT</button>
+        </form>
       </div>
     </div>
-
-    <div id="project-card-overlay"></div>
   </body>
 </html>

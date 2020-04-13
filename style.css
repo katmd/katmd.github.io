@@ -9,6 +9,47 @@ body {
   transition: margin-right 0.5s;
 }
 
+
+/* SIDE NAV */
+#menu-button {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 3em;
+  color: rgb(101, 197, 176);
+  transition: 0.5s;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding-top: 100px;
+  background-color: #D3C1C3;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.side-nav a {
+  padding: 32px 8px 32px 32px;
+  text-decoration: none;
+  font-size: 3em;
+  color: #A16C72;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #ECE7D0;
+}
+
 /* PORTFOLIO SECTIONS */
 .portfolio-sections {
   display: flex;
@@ -88,7 +129,7 @@ body {
   border-right: none;
 }
 
-.project-link {
+.project-link, #submit-btn {
   display: inline;
   padding: 8px;
   border-radius: 5px;
@@ -97,49 +138,9 @@ body {
   text-decoration: none;
 }
 
-.project-link:hover {
+.project-link:hover, #submit-btn:hover {
   color: rgb(205, 255, 245);
-  text-decoration: none;
-}
-
-/* SIDE NAV */
-#menu-button {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  right: 25px;
-  margin-left: 50px;
   cursor: pointer;
-  text-decoration: none;
-  font-size: 3em;
-  color: rgb(101, 197, 176);
-  transition: 0.5s;
-}
-
-.side-nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  padding-top: 100px;
-  background-color: #D3C1C3;
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.side-nav a {
-  padding: 32px 8px 32px 32px;
-  text-decoration: none;
-  font-size: 3em;
-  color: #A16C72;
-  display: block;
-  transition: 0.3s;
-}
-
-.side-nav a:hover {
-  color: #ECE7D0;
 }
 
 @media screen and (max-height: 450px) {
@@ -155,4 +156,41 @@ body {
 @media screen and (max-width: 564px) {
   .project-container {width: calc(100vw - 64px);}
   .project-desc {position: relative; padding: 16px;}
+}
+
+/* CONTACT FORM */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  min-width: 450px;
+  width: 33%;
+  margin: 32px;
+  border-radius: 5px;
+  border: rgb(101, 197, 176) solid 2px;
+  background-color: rgb(173, 241, 227);
+}
+
+#contact-details, #submit-btn {
+  margin: 16px;
+  font-weight: bold;
+}
+
+#contact-details td {
+  padding: 4px;
+}
+
+input, textarea {
+  min-width: 300px;
+}
+
+textarea[name="message"] {
+  height: 100px;
+}
+
+@media screen and (max-width: 564px) {
+  #contact-form {width: calc(100vw - 64px); min-width: auto;}
+  input {width: 100%; min-width: auto;}
+  textarea {width: 100%; min-width: auto;}
 }
