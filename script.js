@@ -25,10 +25,32 @@ function closeNav() {
 }
 
 /* Show and hide project details */
+// Check if screen size is over the max width to display project details as overlay on project image. Otherwise, allows project details to be shown by default under project image.
+let mediaQuery = window.matchMedia("(max-width: 564px)")
+
+function projDescDisplay() {
+  let projDescs = Array.from(document.getElementsByClassName("project-desc"))
+  if (mediaQuery.matches) {
+    projDescs.forEach(desc => {
+      desc.style.display = "flex"
+    })
+  } else {
+    projDescs.forEach(desc => {
+      desc.style.display = "none"
+    })
+  }
+};
+
+window.onresize = projDescDisplay;
+
 function focusProj(projContainer) {
-  projContainer.querySelector(".project-desc").style.display = "flex"
+  if (!mediaQuery.matches) {
+    projContainer.querySelector(".project-desc").style.display = "flex"
+  }
 }
 
 function unfocusProj(projContainer) {
-  projContainer.querySelector(".project-desc").style.display = "none"
+  if (!mediaQuery.matches) {
+    projContainer.querySelector(".project-desc").style.display = "none"
+  }
 }
