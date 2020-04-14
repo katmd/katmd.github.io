@@ -13,7 +13,7 @@ body {
 /* SIDE NAV */
 #menu-button {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   right: 25px;
   margin-left: 50px;
@@ -24,11 +24,11 @@ body {
   transition: 0.5s;
 }
 
-.side-nav {
+#side-nav {
+  position: fixed;
+  z-index: 2;
   height: 100%;
   width: 0;
-  position: fixed;
-  z-index: 1;
   top: 0;
   right: 0;
   padding-top: 100px;
@@ -37,7 +37,7 @@ body {
   transition: 0.5s;
 }
 
-.side-nav a {
+#side-nav a {
   padding: 32px 8px 32px 32px;
   text-decoration: none;
   font-size: 3em;
@@ -46,8 +46,24 @@ body {
   transition: 0.3s;
 }
 
-.side-nav a:hover {
+#side-nav a:hover {
   color: #ECE7D0;
+}
+
+#side-nav-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-height: 450px) {
+  #side-nav {padding-top: 15px; display: flex; flex-direction: column; justify-content: center;}
+  #side-nav a {padding: 8px 8px 8px 32px;}
 }
 
 /* PORTFOLIO SECTIONS */
@@ -141,11 +157,6 @@ body {
 .project-link:hover, #submit-btn:hover {
   color: rgb(205, 255, 245);
   cursor: pointer;
-}
-
-@media screen and (max-height: 450px) {
-  .side-nav, .portfolio-sections {padding-top: 15px;}
-  .side-nav a {padding: 8px 8px 8px 32px;}
 }
 
 @media screen and (max-width: 1180px) {

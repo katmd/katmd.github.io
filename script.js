@@ -1,5 +1,6 @@
 const menuButton = document.getElementById("menu-button")
-const sideNavMenu = document.getElementById("side-nav-menu")
+const sideNav = document.getElementById("side-nav")
+const sideNavOverlay = document.getElementById("side-nav-overlay")
 const main = document.getElementById("main")
 const body = document.body
 
@@ -9,9 +10,8 @@ function openNav() {
   menuButton.style.fontSize = "4em";
   menuButton.style.color = "#A16C72"
   menuButton.setAttribute("onclick", "closeNav()");
-  sideNavMenu.style.width = "300px";
-  main.style.marginRight = "300px";
-  body.style.backgroundColor = "rgba(20, 120, 90, 0.6)";
+  sideNav.style.width = "300px";
+  sideNavOverlay.style.display = "block";
 }
 
 function closeNav() {
@@ -19,9 +19,8 @@ function closeNav() {
   menuButton.style.fontSize = "3em";
   menuButton.style.color = "rgb(101, 197, 176)"
   menuButton.setAttribute("onclick", "openNav()");
-  sideNavMenu.style.width = "0";
-  main.style.marginRight= "0";
-  body.style.backgroundColor = "#BFFFF1";
+  sideNav.style.width = "0";
+  sideNavOverlay.style.display = "none";
 }
 
 /* Show and hide project details */
